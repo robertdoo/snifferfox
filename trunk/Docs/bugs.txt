@@ -1,0 +1,18 @@
+//Author: zhengsh 
+//Date: 2005/10/08 23:50:59 
+//$Id: bugs.txt,v 1.7 2005/10/14 04:16:38 zhengsh Exp $
+// bug list
+//√ ×
+1.zhengsh 2005-10-10 10:48 √
+TArpPacket 中的GetOpType和GetDestMac不能够返回正确 
+
+2.zhengsh 2005-10-10 11:03√
+TIcmpPacket 中的GetDescri函数返回不正确，其中某些字符串不能够在文件中找到 
+另外返回checksum的时候把它转换成16进制//OK	
+
+3.zhengsh 2005-10-11 19:00 
+TTcpPackt 类中的
+GetAppData16()
+GetAppDataAsc()
+方法可以使得CPU利用率到达100％
+同样的问题在TUdpPacket也存在

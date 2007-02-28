@@ -1,0 +1,30 @@
+//Author: zhengsh 
+//Date: 2005/10/08 23:50:59 
+//$Id: Notice.txt,v 1.5 2005/10/09 13:31:43 zhengsh Exp $
+//Notice
+1. zhengsh 2005-10-9 10:28 添加新成员函数
+文件 EtherDataGram.cpp,EtherDataGram.h 中的类 TEtherDataGram添加新的成员函数
+u_char * GetDataHeader();
+int GetDataSize();
+
+2. gourf 2005-10-9 12:42 
+在constant.h添加常量ICMP_HEADER_SIZE和UDP_HEADER_SIZE；
+English.h中添加ICMP协议的描述；
+IpDataGram.h和IpDataGram.cpp中添加函数GetIpHeaderLen()；
+上传文件ArpPacket.h、ArpPacket.cpp、IcmpPacket.cpp、IcmpPacket.h
+
+3.zhengsh 2005-10-9 21:09 改写TIpDataGram类
+改写TIpDataGram类,使得它和TEtherDataGram有相同的接口
+u_char * GetDataHeader();
+int GetDataSize();
+另外还增加了很多关于Ip头的get函数
+
+4.zhengsh 2005-10-9 21:12 增加消息输出函数
+增加消息输出函数ShowMsg,MsgBox在文件MsgDialog.h,MsgDialog.cpp
+void ShowMsg(AnsiString msg,AnsiString title = "");
+//ShowMessage
+int MsgBox(AnsiString msg,AnsiString title = "",int nBtnCnt=2);
+//msg:message
+//nBtncnt:Button Count
+MsgBox 返回用户点击的按钮分别有
+mrOk，mrCancel，mrYes，mrNo
