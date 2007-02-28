@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="..\Bin\SnifferFox.exe"/>
+    <OBJFILES value="..\Obj\SnifferFox.obj ..\Obj\MainWin.obj ..\Obj\Language.obj 
+      ..\Obj\Global.obj ..\Obj\Functions.obj ..\Obj\RecvThread.obj 
+      ..\Obj\IpDataGram.obj ..\Obj\Config.obj ..\Obj\OptionsWin.obj 
+      ..\Obj\EtherDataGram.obj ..\Obj\EtherList.obj ..\Obj\IcmpPacket.obj 
+      ..\Obj\ArpPacket.obj ..\Obj\NicDetail.obj ..\Obj\MsgDialog.obj 
+      ..\Obj\TcpPacket.obj ..\Obj\StatisticWin.obj ..\Obj\UdpPacket.obj 
+      ..\Obj\StatusWin.obj ..\Obj\Cache.obj ..\Obj\IpAddr.obj 
+      ..\Obj\CoverWin.obj ..\Obj\AuthorWin.obj ..\Obj\GotoWin.obj"/>
+    <RESFILES value="SnifferFox.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) ..\Gui\MainWin.dfm ..\Gui\OptionsWin.dfm ..\Gui\NicDetail.dfm 
+      ..\Gui\StatisticWin.dfm ..\Gui\StatusWin.dfm ..\Gui\CoverWin.dfm 
+      ..\Gui\AuthorWin.dfm ..\Gui\GotoWin.dfm"/>
+    <LIBFILES value="..\Bin\ws2_32.lib ..\Bin\wpcap.lib"/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value="vcl.lib rtl.lib SUIPack_BCB.lib vclx.lib dbrtl.lib vcldb.lib bcbsmp.lib 
+      indy.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi SUIPack_BCB.bpi"/>
+    <PATHCPP value=".;..\Gui;..\Core;..\Config;..\Core;..\Core;..\Core;..\Config;..\Gui;..\Core;..\Core;..\Core;..\Core;..\Gui;..\Gui;..\Core;..\Gui;..\Core;..\Gui;..\Core;..\Core;..\Gui;..\Gui;..\Gui"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT;_RTLDLL;USEPACKAGES"/>
+    <MAINSOURCE value="SnifferFox.cpp"/>
+    <INCLUDEPATH value="D:\develop\Borland\CBuilder6\Projects;..\Gui;..\Config;..\Core;D:\Develop\bcb\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;..\Include"/>
+    <LIBPATH value="D:\develop\Borland\CBuilder6\Projects;..\Gui;..\Config;..\Core;D:\Develop\bcb\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\SnifferFox\3com\SUIPack.Source.3.9"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-ID:\develop\Borland\CBuilder6\Projects -I..\Gui -I..\Config -I..\Core 
+      -ID:\Develop\bcb\Borland\CBuilder6\Projects -I$(BCB)\include 
+      -I$(BCB)\include\vcl -I..\Include -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a1 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-N2..\Obj -N0..\Obj -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-l..\Obj -I..\Obj -D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="SnifferFox.res" FORMNAME="" UNITNAME="SnifferFox.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SnifferFox.cpp" FORMNAME="" UNITNAME="SnifferFox" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Gui\MainWin.cpp" FORMNAME="frmMain" UNITNAME="MainWin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Core\Language.cpp" FORMNAME="" UNITNAME="Language" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Config\Global.cpp" FORMNAME="" UNITNAME="Global" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Core\Functions.cpp" FORMNAME="" UNITNAME="Functions" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Bin\ws2_32.lib" FORMNAME="" UNITNAME="ws2_32.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Core\RecvThread.cpp" FORMNAME="" UNITNAME="RecvThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Bin\wpcap.lib" FORMNAME="" UNITNAME="wpcap.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Core\IpDataGram.cpp" FORMNAME="" UNITNAME="IpDataGram" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Config\Config.cpp" FORMNAME="" UNITNAME="Config" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Gui\OptionsWin.cpp" FORMNAME="frmOptions" UNITNAME="OptionsWin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Core\EtherDataGram.cpp" FORMNAME="" UNITNAME="EtherDataGram" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Core\EtherList.cpp" FORMNAME="" UNITNAME="EtherList" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Core\IcmpPacket.cpp" FORMNAME="" UNITNAME="IcmpPacket" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Core\ArpPacket.cpp" FORMNAME="" UNITNAME="ArpPacket" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Gui\NicDetail.cpp" FORMNAME="frmNicDetail" UNITNAME="NicDetail" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Gui\MsgDialog.cpp" FORMNAME="" UNITNAME="MsgDialog" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Core\TcpPacket.cpp" FORMNAME="" UNITNAME="TcpPacket" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Gui\StatisticWin.cpp" FORMNAME="frmStatistic" UNITNAME="StatisticWin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Core\UdpPacket.cpp" FORMNAME="" UNITNAME="UdpPacket" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Gui\StatusWin.cpp" FORMNAME="frmStatus" UNITNAME="StatusWin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Core\Cache.cpp" FORMNAME="" UNITNAME="Cache" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Core\IpAddr.cpp" FORMNAME="" UNITNAME="IpAddr" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Gui\CoverWin.cpp" FORMNAME="frmCover" UNITNAME="CoverWin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Gui\AuthorWin.cpp" FORMNAME="frmAuthor" UNITNAME="AuthorWin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Gui\GotoWin.cpp" FORMNAME="frmGoto" UNITNAME="GotoWin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2052
+CodePage=936
+
+[Version Info Keys]
+CompanyName=FoxBackBone Team
+FileDescription=A Sniffer developed by FoxBackBone Team
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=SnifferFox V1.0 
+ProductVersion=1.0.0.0
+Comments=Zhengsh,Gourf
+
+[HistoryLists\hlIncludePath]
+Count=5
+Item0=D:\develop\Borland\CBuilder6\Projects;..\Gui;..\Config;..\Core;D:\Develop\bcb\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;..\Include
+Item1=..\Gui;..\Config;..\Core;D:\Develop\bcb\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;..\Include
+Item2=..\Gui;..\Config;..\Core;D:\Develop\bcb\Borland\CBuilder6\Projects;D:\SnifferFox\Gui;$(BCB)\include;$(BCB)\include\vcl;..\Include
+Item3=..\Config;..\Core;D:\Develop\bcb\Borland\CBuilder6\Projects;D:\SnifferFox\Gui;$(BCB)\include;$(BCB)\include\vcl;..\Include
+Item4=..\Config;..\Core;D:\Develop\bcb\Borland\CBuilder6\Projects;D:\SnifferFox\Gui;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=5
+Item0=D:\develop\Borland\CBuilder6\Projects;..\Gui;..\Config;..\Core;D:\Develop\bcb\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\SnifferFox\3com\SUIPack.Source.3.9
+Item1=..\Gui;..\Config;..\Core;D:\Develop\bcb\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\SnifferFox\3com\SUIPack.Source.3.9
+Item2=..\Gui;..\Config;..\Core;D:\Develop\bcb\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\Gui;..\Config;..\Core;D:\Develop\bcb\Borland\CBuilder6\Projects;D:\SnifferFox\Gui;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item4=..\Config;..\Core;D:\Develop\bcb\Borland\CBuilder6\Projects;D:\SnifferFox\Gui;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=2
+Item0=$(BCB)\source\vcl;D:\SnifferFox\3com\SUIPack.Source.3.9\
+Item1=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=2
+Item0=..\Obj
+Item1=..\Obj\
+
+[HistoryLists\hlFinalOutputDir]
+Count=1
+Item0=..\Bin\
+
+[HistoryLists\hIBPIOutputDir]
+Count=2
+Item0=..\Obj
+Item1=..\Obj\
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl;D:\SnifferFox\3com\SUIPack.Source.3.9\
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

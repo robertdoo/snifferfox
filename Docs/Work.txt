@@ -1,0 +1,32 @@
+//$Author: zhengsh $ 
+//$Date: 2006/09/06 11:01:51 $ 
+//$Id: Work.txt,v 1.3 2006/09/06 11:01:51 zhengsh Exp $
+//Work Assignment
+
+1.写一个Ip地址类 TIpAddr
+文件名称IpAddr.cpp,IpAddr.h
+要求有以下函数
+TIpAddr(AnsiString ip)
+//构造函数,ip是x.x.x.x形式的字符串
+bool IsValid();
+//判断是否是一个合法的Ip
+bool operator>(const TIpAddr & dest);
+bool operator<(const TIpAddr & dest);
+bool operator==(const TIpAddr & dest);
+//重载比较运算符号，用于比较2个Ip地址的大小
+
+2.英语语言包的制作，完成界面上很多还没有写入文件的输出
+
+
+3.帮助文件的制作，研究一下如何制作帮助文件，只需要很简单的那种 
+
+4.V1.0新功能
+1.鼠标悬停在每个记录上面的时候显示一个提示，显示数据的具体内容，但是不能够弹出对话框
+2.去掉关闭的时候弹出2个对话框，变为只弹出一个
+3.bug clear all packet
+4.bug.第一和最后一条记录的时候，显示不正确
+5.Detail Window,换一个控件，使得上下滑动更加流畅
+6.从新写排序算法，解决排序慢的问题
+7.解决Snifferfox消耗大量资源的问题
+8.去掉网卡名字中多余的空格
+

@@ -1,0 +1,2 @@
+	Translate english.lang to your language and save as language_name.lang in this folder. then your language will be load automaticly. If you would like to share your translation, please mail yours to shaohui_1983@163.com,I will add it in new version of SnifferFox, thanks.
+	翻译文件english.lang到新的语言,在这个目录下保存文件为 "语言.lang". 然后,你翻译的语言将在SnifferFox启动的时候自动加载, 如果你想让别的人共享你的翻译,那么请发给我一份吧,我会在把它加到新版本的中，感谢您的支持.

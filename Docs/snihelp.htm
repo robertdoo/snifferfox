@@ -1,0 +1,1390 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word" xmlns:st1 = 
+"urn:schemas-microsoft-com:office:smarttags"><HEAD><TITLE>SnifferFox说明文档</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META content=Word.Document name=ProgId>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR>
+<META content="Microsoft Word 11" name=Originator><LINK 
+href="Note.files/filelist.xml" rel=File-List><LINK 
+href="Note.files/editdata.mso" rel=Edit-Time-Data><!--[if !mso]>
+<STYLE>v\:* {
+	BEHAVIOR: url(#default#VML)
+}
+o\:* {
+	BEHAVIOR: url(#default#VML)
+}
+w\:* {
+	BEHAVIOR: url(#default#VML)
+}
+.shape {
+	BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+<![endif]--><o:SmartTagType downloadurl="" name="chsdate" 
+namespaceuri="urn:schemas-microsoft-com:office:smarttags"></o:SmartTagType><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>zheng</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>zheng</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>219</o:TotalTime>
+  <o:Created>2005-11-19T19:41:00Z</o:Created>
+  <o:LastSaved>2005-11-19T19:41:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>704</o:Words>
+  <o:Characters>4014</o:Characters>
+  <o:Company>uestc</o:Company>
+  <o:Lines>33</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4709</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]>
+<OBJECT id=ieooui classid=clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D></OBJECT>
+<STYLE>st1\:* {
+	BEHAVIOR: url(#ieooui)
+}
+</STYLE>
+<![endif]-->
+<STYLE>@font-face {
+	font-family: 宋体;
+}
+@font-face {
+	font-family: 黑体;
+}
+@font-face {
+	font-family: @黑体;
+}
+@font-face {
+	font-family: @宋体;
+}
+@page  {mso-page-border-surround-header: no; mso-page-border-surround-footer: no; }
+@page Section1 {size: 595.3pt 841.9pt; margin: 72.0pt 90.0pt 72.0pt 90.0pt; mso-header-margin: 42.55pt; mso-footer-margin: 49.6pt; mso-paper-source: 0; layout-grid: 15.6pt; }
+P.MsoNormal {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10.5pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-style-parent: ""; mso-pagination: none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt
+}
+LI.MsoNormal {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10.5pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-style-parent: ""; mso-pagination: none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt
+}
+DIV.MsoNormal {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10.5pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-style-parent: ""; mso-pagination: none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt
+}
+H1 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 22pt; MARGIN: 17pt 0cm 16.5pt; TEXT-INDENT: 0cm; LINE-HEIGHT: 240%; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-font-kerning: 22.0pt; mso-style-next: 正文; mso-outline-level: 1; mso-list: l3 level1 lfo1; tab-stops: list 21.25pt
+}
+H2 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 16pt; MARGIN: 13pt 0cm 13pt 42.55pt; TEXT-INDENT: 0cm; LINE-HEIGHT: 173%; FONT-FAMILY: Arial; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-fareast-font-family: 黑体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 2; mso-list: l3 level2 lfo1; tab-stops: list 63.8pt; mso-bidi-font-family: "Times New Roman"
+}
+H3 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 16pt; MARGIN: 13pt 0cm 13pt 3cm; TEXT-INDENT: 0cm; LINE-HEIGHT: 173%; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 3; mso-list: l3 level3 lfo1; tab-stops: list 106.3pt
+}
+H4 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 14pt; MARGIN: 14pt 0cm 14.5pt 127.55pt; TEXT-INDENT: 0cm; LINE-HEIGHT: 156%; FONT-FAMILY: Arial; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-fareast-font-family: 黑体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 4; mso-list: l3 level4 lfo1; tab-stops: list 148.8pt; mso-bidi-font-family: "Times New Roman"
+}
+H5 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 14pt; MARGIN: 14pt 0cm 14.5pt 6cm; TEXT-INDENT: 0cm; LINE-HEIGHT: 156%; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 5; mso-list: l3 level5 lfo1; tab-stops: list 191.35pt
+}
+H6 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 12pt; MARGIN: 12pt 0cm 3.2pt 212.6pt; TEXT-INDENT: 0cm; LINE-HEIGHT: 133%; FONT-FAMILY: Arial; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-fareast-font-family: 黑体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 6; mso-list: l3 level6 lfo1; tab-stops: list 233.85pt; mso-bidi-font-family: "Times New Roman"
+}
+P.MsoHeading7 {
+	FONT-WEIGHT: bold; TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 12pt; MARGIN: 12pt 0cm 3.2pt 255.1pt; TEXT-INDENT: 0cm; LINE-HEIGHT: 133%; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 7; mso-list: l3 level7 lfo1; tab-stops: list 276.4pt
+}
+LI.MsoHeading7 {
+	FONT-WEIGHT: bold; TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 12pt; MARGIN: 12pt 0cm 3.2pt 255.1pt; TEXT-INDENT: 0cm; LINE-HEIGHT: 133%; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 7; mso-list: l3 level7 lfo1; tab-stops: list 276.4pt
+}
+DIV.MsoHeading7 {
+	FONT-WEIGHT: bold; TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 12pt; MARGIN: 12pt 0cm 3.2pt 255.1pt; TEXT-INDENT: 0cm; LINE-HEIGHT: 133%; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 7; mso-list: l3 level7 lfo1; tab-stops: list 276.4pt
+}
+P.MsoHeading8 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 12pt; MARGIN: 12pt 0cm 3.2pt 297.65pt; TEXT-INDENT: 0cm; LINE-HEIGHT: 133%; FONT-FAMILY: Arial; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-fareast-font-family: 黑体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 8; mso-list: l3 level8 lfo1; tab-stops: list 318.9pt; mso-bidi-font-family: "Times New Roman"
+}
+LI.MsoHeading8 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 12pt; MARGIN: 12pt 0cm 3.2pt 297.65pt; TEXT-INDENT: 0cm; LINE-HEIGHT: 133%; FONT-FAMILY: Arial; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-fareast-font-family: 黑体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 8; mso-list: l3 level8 lfo1; tab-stops: list 318.9pt; mso-bidi-font-family: "Times New Roman"
+}
+DIV.MsoHeading8 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 12pt; MARGIN: 12pt 0cm 3.2pt 297.65pt; TEXT-INDENT: 0cm; LINE-HEIGHT: 133%; FONT-FAMILY: Arial; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-fareast-font-family: 黑体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 8; mso-list: l3 level8 lfo1; tab-stops: list 318.9pt; mso-bidi-font-family: "Times New Roman"
+}
+P.MsoHeading9 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10.5pt; MARGIN: 12pt 0cm 3.2pt 340.15pt; TEXT-INDENT: 0cm; LINE-HEIGHT: 133%; FONT-FAMILY: Arial; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-fareast-font-family: 黑体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 9; mso-list: l3 level9 lfo1; tab-stops: list 361.4pt; mso-bidi-font-family: "Times New Roman"
+}
+LI.MsoHeading9 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10.5pt; MARGIN: 12pt 0cm 3.2pt 340.15pt; TEXT-INDENT: 0cm; LINE-HEIGHT: 133%; FONT-FAMILY: Arial; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-fareast-font-family: 黑体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 9; mso-list: l3 level9 lfo1; tab-stops: list 361.4pt; mso-bidi-font-family: "Times New Roman"
+}
+DIV.MsoHeading9 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10.5pt; MARGIN: 12pt 0cm 3.2pt 340.15pt; TEXT-INDENT: 0cm; LINE-HEIGHT: 133%; FONT-FAMILY: Arial; TEXT-ALIGN: justify; mso-pagination: lines-together; mso-fareast-font-family: 黑体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-outline-level: 9; mso-list: l3 level9 lfo1; tab-stops: list 361.4pt; mso-bidi-font-family: "Times New Roman"
+}
+P.MsoToc1 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10.5pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-pagination: none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-style-update: auto; mso-style-noshow: yes
+}
+LI.MsoToc1 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10.5pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-pagination: none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-style-update: auto; mso-style-noshow: yes
+}
+DIV.MsoToc1 {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10.5pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-pagination: none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-style-update: auto; mso-style-noshow: yes
+}
+P.MsoCaption {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: Arial; TEXT-ALIGN: justify; mso-pagination: none; mso-fareast-font-family: 黑体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-style-noshow: yes
+}
+LI.MsoCaption {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: Arial; TEXT-ALIGN: justify; mso-pagination: none; mso-fareast-font-family: 黑体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-style-noshow: yes
+}
+DIV.MsoCaption {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: Arial; TEXT-ALIGN: justify; mso-pagination: none; mso-fareast-font-family: 黑体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-style-noshow: yes
+}
+P.MsoTof {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10.5pt; MARGIN: 0cm 0cm 0pt; TEXT-INDENT: -10pt; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-pagination: none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-style-noshow: yes; mso-para-margin-top: 0cm; mso-para-margin-right: 0cm; mso-para-margin-bottom: .0001pt; mso-para-margin-left: 2.0gd; mso-char-indent-count: -2.0
+}
+LI.MsoTof {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10.5pt; MARGIN: 0cm 0cm 0pt; TEXT-INDENT: -10pt; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-pagination: none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-style-noshow: yes; mso-para-margin-top: 0cm; mso-para-margin-right: 0cm; mso-para-margin-bottom: .0001pt; mso-para-margin-left: 2.0gd; mso-char-indent-count: -2.0
+}
+DIV.MsoTof {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10.5pt; MARGIN: 0cm 0cm 0pt; TEXT-INDENT: -10pt; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-pagination: none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-style-next: 正文; mso-style-noshow: yes; mso-para-margin-top: 0cm; mso-para-margin-right: 0cm; mso-para-margin-bottom: .0001pt; mso-para-margin-left: 2.0gd; mso-char-indent-count: -2.0
+}
+A:link {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlink {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+A:visited {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlinkFollowed {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.SpellE {
+	mso-style-name: ""; mso-spl-e: yes
+}
+DIV.Section1 {
+	page: Section1
+}
+OL {
+	MARGIN-BOTTOM: 0cm
+}
+UL {
+	MARGIN-BOTTOM: 0cm
+}
+</STYLE>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]--></HEAD>
+<BODY lang=ZH-CN style="TEXT-JUSTIFY-TRIM: punctuation; tab-interval: 21.0pt" 
+vLink=purple link=blue>
+<DIV class=Section1 style="LAYOUT-GRID:  15.6pt none">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><SPAN class=SpellE><B 
+style="mso-bidi-font-weight: normal"><SPAN lang=EN-US 
+style="FONT-SIZE: 18pt; mso-fareast-font-family: 黑体">SnifferFox</SPAN></B></SPAN><B 
+style="mso-bidi-font-weight: normal"><SPAN 
+style="FONT-SIZE: 18pt; FONT-FAMILY: 黑体; mso-ascii-font-family: 'Times New Roman'">说明文档</SPAN></B><B 
+style="mso-bidi-font-weight: normal"><SPAN lang=EN-US 
+style="FONT-SIZE: 18pt; mso-fareast-font-family: 黑体"><o:p></o:p></SPAN></B></P>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><SPAN 
+class=SpellE><SPAN lang=EN-US style="FONT-SIZE: 12pt">Zhengsh</SPAN></SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"> <st1:chsdate w:st="on" Year="2005" 
+Month="11" Day="20" IsLunarDate="False" 
+IsROCDate="False">2005-11-20</st1:chsdate><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" 
+align=right><!--[if gte vml 1]><v:shapetype id=_x0000_t202 coordsize = 
+"21600,21600" o:spt = "202" path = 
+" m0,0 l0,21600,21600,21600,21600,0 xe"><v:stroke joinstyle = 
+"miter"></v:stroke><v:path gradientshapeok = "t" o:connecttype = 
+"rect"></v:path></v:shapetype><v:shape id=_x0000_s1033 
+style="MARGIN-TOP: 0px; Z-INDEX: 3; LEFT: 0px; MARGIN-LEFT: 0px; WIDTH: 6in; POSITION: absolute; HEIGHT: 257.4pt; TEXT-ALIGN: left" 
+type = "#_x0000_t202" coordsize = "21600,21600" stroked = "f"></v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+
+<table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=0 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td width=580 height=347 bgcolor=white style='vertical-align:top;background:
+  white'><![endif]><![if !mso]><SPAN 
+style="Z-INDEX: 3; LEFT: 0pt; POSITION: absolute; mso-ignore: vglayout">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD><![endif]>
+      <DIV class=shape 
+      style="PADDING-RIGHT: 7.2pt; PADDING-LEFT: 7.2pt; PADDING-BOTTOM: 3.6pt; PADDING-TOP: 3.6pt" 
+      v:shape = "_x0000_s1033">
+      <P class=MsoNormal><SPAN lang=EN-US><!--[if gte vml 1]><v:shapetype 
+      id=_x0000_t75 coordsize = "21600,21600" o:preferrelative = "t" o:spt = 
+      "75" filled = "f" stroked = "f" path = 
+      " m@4@5 l@4@11@9@11@9@5 xe"><v:stroke joinstyle = 
+      "miter"></v:stroke><v:formulas><v:f eqn = 
+      "if lineDrawn pixelLineWidth 0 "></v:f><v:f eqn = "sum @0 1 0 "></v:f><v:f 
+      eqn = "sum 0 0 @1 "></v:f><v:f eqn = "prod @2 1 2 "></v:f><v:f eqn = 
+      "prod @3 21600 pixelWidth "></v:f><v:f eqn = 
+      "prod @3 21600 pixelHeight "></v:f><v:f eqn = "sum @0 0 1 "></v:f><v:f eqn 
+      = "prod @6 1 2 "></v:f><v:f eqn = "prod @7 21600 pixelWidth "></v:f><v:f 
+      eqn = "sum @8 21600 0 "></v:f><v:f eqn = 
+      "prod @7 21600 pixelHeight "></v:f><v:f eqn = 
+      "sum @10 21600 0 "></v:f></v:formulas><v:path o:extrusionok = "f" 
+      gradientshapeok = "t" o:connecttype = "rect"></v:path><o:lock 
+      aspectratio="t" v:ext="edit"></o:lock></v:shapetype><v:shape 
+      id=_x0000_i1026 style="WIDTH: 399.75pt; HEIGHT: 246.75pt" type = 
+      "#_x0000_t75" coordsize = "21600,21600"><v:imagedata o:title="cover" src = 
+      "Note.files/image001.png"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=533 height=329
+    src="Note.files/image010.gif" v:shapes="_x0000_i1026"><![endif]></SPAN></P>
+      <P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P></DIV><![if !mso]></TD></TR></TBODY></TABLE></SPAN><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><A name=_Ref120219393><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></A></P><BR 
+style="mso-ignore: vglayout" clear=all>
+<P class=MsoToc1 style="tab-stops: 21.0pt right dotted 414.8pt"><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><!--[if supportFields]><span
+style='mso-bookmark:_Ref120219393'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt'><span
+style='mso-spacerun:yes'>&nbsp;</span>TOC \o &quot;1-3&quot; \h \z \u <span
+style='mso-element:field-separator'></span></span></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><A 
+href="file:///D:/SnifferFox/Docs/Note.htm#_Toc120219644"><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">I.</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN 
+style="FONT-SIZE: 14pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-no-proof: yes; mso-hansi-font-family: 'Times New Roman'">什么是</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">SnifferFox</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen"><SPAN 
+style="mso-tab-count: 1 dotted">. </SPAN></SPAN></SPAN><!--[if supportFields]><span
+style='mso-bookmark:_Ref120219393'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:
+none;text-underline:none'> PAGEREF _Toc120219644 \h </span></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;mso-no-proof:yes;text-decoration:none;text-underline:none'><span
+style='display:none;mso-hide:screen'><span style='mso-element:field-separator'></span></span></span></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen">2<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100320030003200310039003600340034000000</w:data>
+</xml><![endif]--></SPAN></SPAN><!--[if supportFields]><span style='mso-bookmark:
+_Ref120219393'></span><span style='mso-element:field-end'></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN></A><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes"><o:p></o:p></SPAN></SPAN></P>
+<P class=MsoToc1 style="tab-stops: 21.0pt right dotted 414.8pt"><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><A 
+href="file:///D:/SnifferFox/Docs/Note.htm#_Toc120219645"><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">II.</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes"><SPAN 
+style="mso-tab-count: 1">&nbsp; </SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">SnifferFox</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN 
+style="FONT-SIZE: 14pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-no-proof: yes; mso-hansi-font-family: 'Times New Roman'">工作原理</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen"><SPAN 
+style="mso-tab-count: 1 dotted">... </SPAN></SPAN></SPAN><!--[if supportFields]><span
+style='mso-bookmark:_Ref120219393'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:
+none;text-underline:none'> PAGEREF _Toc120219645 \h </span></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;mso-no-proof:yes;text-decoration:none;text-underline:none'><span
+style='display:none;mso-hide:screen'><span style='mso-element:field-separator'></span></span></span></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen">2<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100320030003200310039003600340035000000</w:data>
+</xml><![endif]--></SPAN></SPAN><!--[if supportFields]><span style='mso-bookmark:
+_Ref120219393'></span><span style='mso-element:field-end'></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN></A><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes"><o:p></o:p></SPAN></SPAN></P>
+<P class=MsoToc1 style="tab-stops: 31.5pt right dotted 414.8pt"><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><A 
+href="file:///D:/SnifferFox/Docs/Note.htm#_Toc120219646"><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">III.</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">SnifferFox</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN 
+style="FONT-SIZE: 14pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-no-proof: yes; mso-hansi-font-family: 'Times New Roman'">目录结构</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen"><SPAN 
+style="mso-tab-count: 1 dotted">... </SPAN></SPAN></SPAN><!--[if supportFields]><span
+style='mso-bookmark:_Ref120219393'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:
+none;text-underline:none'> PAGEREF _Toc120219646 \h </span></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;mso-no-proof:yes;text-decoration:none;text-underline:none'><span
+style='display:none;mso-hide:screen'><span style='mso-element:field-separator'></span></span></span></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen">4<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100320030003200310039003600340036000000</w:data>
+</xml><![endif]--></SPAN></SPAN><!--[if supportFields]><span style='mso-bookmark:
+_Ref120219393'></span><span style='mso-element:field-end'></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN></A><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes"><o:p></o:p></SPAN></SPAN></P>
+<P class=MsoToc1 style="tab-stops: 31.5pt right dotted 414.8pt"><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><A 
+href="file:///D:/SnifferFox/Docs/Note.htm#_Toc120219647"><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">IV.</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">SnifferFox</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN 
+style="FONT-SIZE: 14pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-no-proof: yes; mso-hansi-font-family: 'Times New Roman'">功能说明</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen"><SPAN 
+style="mso-tab-count: 1 dotted">... </SPAN></SPAN></SPAN><!--[if supportFields]><span
+style='mso-bookmark:_Ref120219393'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:
+none;text-underline:none'> PAGEREF _Toc120219647 \h </span></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;mso-no-proof:yes;text-decoration:none;text-underline:none'><span
+style='display:none;mso-hide:screen'><span style='mso-element:field-separator'></span></span></span></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen">4<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100320030003200310039003600340037000000</w:data>
+</xml><![endif]--></SPAN></SPAN><!--[if supportFields]><span style='mso-bookmark:
+_Ref120219393'></span><span style='mso-element:field-end'></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN></A><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes"><o:p></o:p></SPAN></SPAN></P>
+<P class=MsoToc1 style="tab-stops: 21.0pt right dotted 414.8pt"><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><A 
+href="file:///D:/SnifferFox/Docs/Note.htm#_Toc120219648"><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">V.</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes"><SPAN 
+style="mso-tab-count: 1">&nbsp; </SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">SnifferFox</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN 
+style="FONT-SIZE: 14pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-no-proof: yes; mso-hansi-font-family: 'Times New Roman'">特点</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen"><SPAN 
+style="mso-tab-count: 1 dotted">... </SPAN></SPAN></SPAN><!--[if supportFields]><span
+style='mso-bookmark:_Ref120219393'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:
+none;text-underline:none'> PAGEREF _Toc120219648 \h </span></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;mso-no-proof:yes;text-decoration:none;text-underline:none'><span
+style='display:none;mso-hide:screen'><span style='mso-element:field-separator'></span></span></span></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen">5<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100320030003200310039003600340038000000</w:data>
+</xml><![endif]--></SPAN></SPAN><!--[if supportFields]><span style='mso-bookmark:
+_Ref120219393'></span><span style='mso-element:field-end'></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN></A><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes"><o:p></o:p></SPAN></SPAN></P>
+<P class=MsoToc1 style="tab-stops: 31.5pt right dotted 414.8pt"><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><A 
+href="file:///D:/SnifferFox/Docs/Note.htm#_Toc120219649"><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">VI.</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN 
+style="FONT-SIZE: 14pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-no-proof: yes; mso-hansi-font-family: 'Times New Roman'">扩展</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">SnifferFox</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen"><SPAN 
+style="mso-tab-count: 1 dotted">. </SPAN></SPAN></SPAN><!--[if supportFields]><span
+style='mso-bookmark:_Ref120219393'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:
+none;text-underline:none'> PAGEREF _Toc120219649 \h </span></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;mso-no-proof:yes;text-decoration:none;text-underline:none'><span
+style='display:none;mso-hide:screen'><span style='mso-element:field-separator'></span></span></span></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen">6<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100320030003200310039003600340039000000</w:data>
+</xml><![endif]--></SPAN></SPAN><!--[if supportFields]><span style='mso-bookmark:
+_Ref120219393'></span><span style='mso-element:field-end'></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN></A><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes"><o:p></o:p></SPAN></SPAN></P>
+<P class=MsoToc1 style="tab-stops: 31.5pt right dotted 414.8pt"><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><A 
+href="file:///D:/SnifferFox/Docs/Note.htm#_Toc120219650"><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">VII.</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes"><SPAN 
+style="mso-tab-count: 1">&nbsp; </SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN 
+style="FONT-SIZE: 14pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-no-proof: yes; mso-hansi-font-family: 'Times New Roman'">作者</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen"><SPAN 
+style="mso-tab-count: 1 dotted">... </SPAN></SPAN></SPAN><!--[if supportFields]><span
+style='mso-bookmark:_Ref120219393'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:
+none;text-underline:none'> PAGEREF _Toc120219650 \h </span></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;mso-no-proof:yes;text-decoration:none;text-underline:none'><span
+style='display:none;mso-hide:screen'><span style='mso-element:field-separator'></span></span></span></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen">6<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100320030003200310039003600350030000000</w:data>
+</xml><![endif]--></SPAN></SPAN><!--[if supportFields]><span style='mso-bookmark:
+_Ref120219393'></span><span style='mso-element:field-end'></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN></A><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes"><o:p></o:p></SPAN></SPAN></P>
+<P class=MsoToc1 style="tab-stops: 31.5pt right dotted 414.8pt"><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><A 
+href="file:///D:/SnifferFox/Docs/Note.htm#_Toc120219651"><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes">VIII.</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes"><SPAN 
+style="mso-tab-count: 1"> </SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN 
+style="FONT-SIZE: 14pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-no-proof: yes; mso-hansi-font-family: 'Times New Roman'">结束语</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen"><SPAN 
+style="mso-tab-count: 1 dotted">... </SPAN></SPAN></SPAN><!--[if supportFields]><span
+style='mso-bookmark:_Ref120219393'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:
+none;text-underline:none'> PAGEREF _Toc120219651 \h </span></span><span
+style='mso-bookmark:_Ref120219393'><span lang=EN-US style='font-size:14.0pt;
+color:windowtext;mso-no-proof:yes;text-decoration:none;text-underline:none'><span
+style='display:none;mso-hide:screen'><span style='mso-element:field-separator'></span></span></span></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="DISPLAY: none; FONT-SIZE: 14pt; COLOR: windowtext; TEXT-DECORATION: none; text-underline: none; mso-no-proof: yes; mso-hide: screen">7<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100320030003200310039003600350031000000</w:data>
+</xml><![endif]--></SPAN></SPAN><!--[if supportFields]><span style='mso-bookmark:
+_Ref120219393'></span><span style='mso-element:field-end'></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN></A><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 14pt; mso-no-proof: yes"><o:p></o:p></SPAN></SPAN></P>
+<P class=MsoNormal><SPAN style="mso-bookmark: _Ref120219393"></SPAN><!--[if supportFields]><span
+style='mso-bookmark:_Ref120219393'></span><span style='mso-element:field-end'></span><![endif]--><SPAN 
+style="mso-bookmark: _Ref120219393"></SPAN><SPAN 
+style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></SPAN></P>
+<P class=MsoNormal><SPAN style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></SPAN></P>
+<P class=MsoNormal><SPAN style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></SPAN></P>
+<P class=MsoNormal><SPAN style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></SPAN></P>
+<P class=MsoNormal><SPAN style="mso-bookmark: _Ref120219393"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></SPAN></P>
+<H1 style="MARGIN-LEFT: 0cm; TEXT-INDENT: 0cm"><SPAN 
+style="mso-bookmark: _Ref120219393"><A 
+name=_Toc120219644><![if !supportLists]><SPAN lang=EN-US 
+style="mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">I.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">什么是</SPAN></A><SPAN 
+class=SpellE><SPAN style="mso-bookmark: _Toc120219644"><SPAN 
+lang=EN-US>SnifferFox</SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Toc120219644"></SPAN></SPAN></H1>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">是运行于</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Windows</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">平台的嗅探器</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">(<SPAN 
+class=SpellE>Sniffer</SPAN>)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">。用于截获经过本地计算机指定网卡的所有数据包，并且对这些包进行分析和统计。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">是基于</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Winpcap</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">开发的，</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Winpcap</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">是一个开源的项目，为了能够得到原始的数据包，因此我们选择了它</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">(</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">由于</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Socket</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">工作在</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">IP</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">层，不能够得到</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">ARP,RARP</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">的包，所以我们没有使用</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">。所以说，在你安装</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">以前请先安装</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Winpcap</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，否则就会出现找不到网卡的提示。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">我们选择是</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Borland <SPAN 
+class=SpellE>C++Builder</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">来开发这个</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Sniffer</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，经过近</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">2</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个月的努力，我们写了将近</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">6000</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">多行的代码（文件</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">docs/codestat.txt</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">有详细的统计），这个软件终于基本开发完成了，现在我们可以发布它的</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Alpha</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">版了。不过里面可能还是有不少我们没有发现的错误，这可能回在以后的版本中得到更正。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">是免费的，是一个绿色软件，无需安装和注册，我们向大家承诺绝对不修改你的计算机的注册表，可以直接运行</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">(</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">当然，为了你使用方便，我们还是制作了一个安装包</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">下图是</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">的</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Banner<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1025 style="WIDTH: 5in; HEIGHT: 182.25pt" type = "#_x0000_t75" 
+coordsize = "21600,21600"><v:imagedata o:title="snifferfox" src = 
+"Note.files/image003.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=480 height=243
+src="Note.files/image003.gif" v:shapes="_x0000_i1025"><![endif]></SPAN></P>
+<P class=MsoCaption style="TEXT-ALIGN: center" align=center><A 
+name=_Toc120219539><SPAN 
+style="FONT-FAMILY: 黑体; mso-ascii-font-family: Arial">图表</SPAN> </A><!--[if supportFields]><span style='mso-bookmark:_Toc120219539'></span><span
+style='mso-element:field-begin'></span><span style='mso-bookmark:_Toc120219539'><span
+lang=EN-US><span style='mso-spacerun:yes'>&nbsp;</span>SEQ </span></span><span
+style='mso-bookmark:_Toc120219539'><span style='font-family:黑体;mso-ascii-font-family:
+Arial'>图表</span><span lang=EN-US> \* ARABIC <span style='mso-element:field-separator'></span></span></span><![endif]--><SPAN 
+style="mso-bookmark: _Toc120219539"><SPAN lang=EN-US><SPAN 
+style="mso-no-proof: yes">1</SPAN></SPAN></SPAN><!--[if supportFields]><span style='mso-bookmark:
+_Toc120219539'></span><span style='mso-element:field-end'></span><![endif]--><SPAN 
+style="mso-bookmark: _Toc120219539"><SPAN lang=EN-US> <SPAN 
+class=SpellE>SnifferFox</SPAN> Banner</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Toc120219539"></SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; mso-bidi-font-size: 10.0pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<H1 style="MARGIN-LEFT: 0cm; TEXT-INDENT: 0cm"><A name=_Toc120219645><![if !supportLists]><SPAN lang=EN-US 
+style="mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">II.<SPAN style="FONT: 7pt 'Times New Roman'"> 
+</SPAN></SPAN></SPAN><![endif]></A><SPAN class=SpellE><SPAN 
+style="mso-bookmark: _Toc120219645"><SPAN 
+lang=EN-US>SnifferFox</SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Toc120219645"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">工作原理</SPAN></SPAN></H1>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">软件首先把网卡设置为混杂模式，然后获得网卡接收到的数据，按</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">TCP/IP</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">协议对数据包进行分析，按照用户的要求把一部分包过滤掉，然后再把这些等剩下的数据包写入缓冲区（一块指定大小的内存块，可以根据用户计算机的内存大小手工设置），显示在用户界面上，当缓冲区满了的时候，系统会自动把缓冲区的数据写入到外存中去。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><!--[if gte vml 1]><v:shape 
+id=_x0000_s1028 
+style="MARGIN-TOP: 15.6pt; Z-INDEX: 1; LEFT: 0px; MARGIN-LEFT: -63pt; WIDTH: 585pt; TEXT-INDENT: 0px; POSITION: absolute; HEIGHT: 226.2pt; TEXT-ALIGN: left" 
+type = "#_x0000_t202" coordsize = "21600,21600" stroked = "f"><v:fill opacity = 
+"0"></v:fill><v:textbox 
+style="MARGIN-TOP: 4.187pt; LEFT: auto; MARGIN-LEFT: 7.187pt; WIDTH: 570.625pt; TOP: auto; HEIGHT: 219pt; mso-next-textbox: #_x0000_s1028"><![if !mso]>
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD><![endif]>
+      <DIV>
+      <P class=MsoNormal><SPAN lang=EN-US><v:shape id=_x0000_i1027 
+      style="WIDTH: 523.5pt; HEIGHT: 195pt" type = "#_x0000_t75" coordsize = 
+      "21600,21600"><v:imagedata o:title="struct" src = 
+      "Note.files/image004.gif"></v:imagedata></v:shape></SPAN></P>
+      <P class=MsoCaption style="TEXT-ALIGN: center" align=center><SPAN 
+      style="FONT-FAMILY: 黑体; mso-ascii-font-family: Arial">图表</SPAN><![if supportFields]><span
+    lang=EN-US><span style='mso-element:field-begin'></span><span
+    style='mso-spacerun:yes'>&nbsp;</span>SEQ </span><span style='font-family:
+    黑体;mso-ascii-font-family:Arial'>图表</span><span lang=EN-US> \* ARABIC <span
+    style='mso-element:field-separator'></span></span><![endif]> <SPAN 
+      lang=EN-US><SPAN style="mso-no-proof: yes">2</SPAN></SPAN><![if supportFields]><span
+    lang=EN-US><span style='mso-element:field-end'></span></span><![endif]><SPAN 
+      lang=EN-US> <SPAN class=SpellE>SnifferFox</SPAN> Data Flow 
+      Diagram</SPAN></P></DIV><![if !mso]></TD></TR></TBODY></TABLE><![endif]></v:textbox></v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:1;left:0px;margin-left:-84px;margin-top:20px;width:785px;
+height:307px'><img width=785 height=307 src="Note.files/image011.gif"
+alt="文本框:  &#13;&#10;图表 2 SnifferFox Data Flow Diagram&#13;&#10;" v:shapes="_x0000_s1028"></span><![endif]><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">下图是一个简单的说明。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">是一个多线程的系统，大致可以分成</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">3</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个线程</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">(</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">实现的时候实际只用了</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">2</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，抓包线程</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">(<SPAN 
+class=SpellE>Sniffer</SPAN> Thread)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，协议分析和过滤的线程，用户界面。工作在数据链路层，因此可以获得原始的数据帧，所以</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">可以支持</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">ARP</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">RARP</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">等底层协议。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">由于</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Sniffer</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">截获的包的数据量是相当大的，所以把这些包都保存在内存中是不太现实的想法，所以这里我们引进了操作系统中两个概念</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Cache</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">和</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Buffer</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Cache</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">是临时保存数据包的一个链表。为了不给用户的计算机带来太大的负担我们限制这个链表的最大长度为</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">5000</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">。当这个链表达到长度达到其用户设置的上限的时候，系统会自动把链表中的数据写到</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Buffer</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">中，然后把</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Cache</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">清空。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><!--[if gte vml 1]><v:shape 
+id=_x0000_s1029 
+style="MARGIN-TOP: 46.8pt; Z-INDEX: 2; LEFT: 0px; MARGIN-LEFT: 0px; WIDTH: 411.15pt; TEXT-INDENT: 0px; POSITION: absolute; HEIGHT: 109.2pt; TEXT-ALIGN: left; mso-wrap-style: none; mso-position-horizontal: left" 
+type = "#_x0000_t202" coordsize = "21600,21600" stroked = "f"><v:textbox 
+style="MARGIN-TOP: 3.875pt; LEFT: auto; MARGIN-LEFT: 7.187pt; WIDTH: 396.75pt; TOP: auto; HEIGHT: 102pt; mso-next-textbox: #_x0000_s1029"><![if !mso]>
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD><![endif]>
+      <DIV>
+      <P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN 
+      lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><v:shape 
+      id=_x0000_i1028 style="WIDTH: 375.75pt; HEIGHT: 66.75pt" type = 
+      "#_x0000_t75" coordsize = "21600,21600"><v:imagedata o:title="" src = 
+      "Note.files/image006.emz"></v:imagedata></v:shape></SPAN></P>
+      <P class=MsoCaption style="TEXT-ALIGN: center" align=center><SPAN 
+      style="FONT-FAMILY: 黑体; mso-ascii-font-family: Arial">图表</SPAN><![if supportFields]><span
+    lang=EN-US><span style='mso-element:field-begin'></span><span
+    style='mso-spacerun:yes'>&nbsp;</span>SEQ </span><span style='font-family:
+    黑体;mso-ascii-font-family:Arial'>图表</span><span lang=EN-US> \* ARABIC <span
+    style='mso-element:field-separator'></span></span><![endif]> <SPAN 
+      lang=EN-US><SPAN style="mso-no-proof: yes">3</SPAN></SPAN><![if supportFields]><span
+    lang=EN-US><span style='mso-element:field-end'></span></span><![endif]><SPAN 
+      lang=EN-US> Buffer Record</SPAN><SPAN lang=EN-US 
+      style="FONT-SIZE: 12pt; mso-bidi-font-size: 10.0pt"><o:p></o:p></SPAN></P>
+      <P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN 
+      lang=EN-US 
+      style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P></DIV><![if !mso]></TD></TR></TBODY></TABLE><![endif]></v:textbox><w:wrap 
+type = "square"></w:wrap></v:shape><![endif]--><![if !vml]><img width=552 height=150
+src="Note.files/image012.gif" align=left hspace=12
+alt="文本框:  &#13;&#10;图表 3 Buffer Record&#13;&#10;&#13;&#10;" v:shapes="_x0000_s1029"><![endif]><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">Buffer</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">是一个二进制文件，它是由一个一个的数据包组成。我们不妨称每个包为一个记录。其长度是不固定的，主要是因为数据包的大小是没有办法确定的。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="LINE-HEIGHT: 150%"><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">它由</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">4</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个部分构成，</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">ID(4</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">字节</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，段偏移</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">(4</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">字节</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，数据帧的相关信息</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">(16</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">字节</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，数据</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">(</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">长度不定，不过可以根据图中的计算公式来计算</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">。其中段偏移也就是记录长度，主要是用于确定记录的结束位置和下一个记录的开始位置。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P>
+<H1 style="MARGIN-LEFT: 0cm; TEXT-INDENT: 0cm"><A name=_Toc120219646><![if !supportLists]><SPAN lang=EN-US 
+style="mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">III.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]></A><SPAN class=SpellE><SPAN 
+style="mso-bookmark: _Toc120219646"><SPAN 
+lang=EN-US>SnifferFox</SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Toc120219646"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">目录结构</SPAN></SPAN></H1>
+<P class=MsoNormal style="TEXT-INDENT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">当然这里我们必须说明的是发布版本和开发版本的目录结构是不一样的，开发版本中的目录更多，更复杂，但是发布版本中的目录发布版本都有，因此这里只介绍开发版本的目录，发布版本可以对照得出</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">(</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">参考</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">docs/dir.txt)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">+<SPAN 
+class=SpellE>Snifferfox</SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+Bin<SPAN 
+style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">编译器编译后的二进制文件已经动态链接库文件</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+<SPAN 
+class=SpellE>Config</SPAN><SPAN 
+style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">配置文件</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+Images 
+<SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">图片</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+<SPAN 
+class=SpellE>Obj</SPAN><SPAN 
+style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">编译器生成得中间文件</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+Docs<SPAN 
+style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">文档目录</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>+Project<SPAN style="mso-tab-count: 1"> </SPAN><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">工程目录</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+Core<SPAN 
+style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">核心的代码，主要是自己定义的数据结构以及其实现</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+<SPAN 
+class=SpellE>Gui</SPAN><SPAN 
+style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">实现图形界面的代码</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+Lang<SPAN 
+style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">多语言支持</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+Cache<SPAN 
+style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">缓存目录，用于存放临时文件</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>+3Com<SPAN 
+style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">系统中使用的第</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">3</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">方控件</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><SPAN 
+style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>+Save<SPAN 
+style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">用户目录，用于保存用户文件</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="LINE-HEIGHT: 150%"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p>&nbsp;</o:p></SPAN></P>
+<H1 style="MARGIN-LEFT: 0cm; TEXT-INDENT: 0cm"><A name=_Toc120219647><![if !supportLists]><SPAN lang=EN-US 
+style="mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">IV.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]></A><SPAN class=SpellE><SPAN 
+style="mso-bookmark: _Toc120219647"><SPAN 
+lang=EN-US>SnifferFox</SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Toc120219647"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">功能说明</SPAN></SPAN></H1>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l5 level1 lfo2; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">1.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">数据包截取</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">用户可以指定一个计算机的网卡，然后用</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">截取经过这张网卡的所以数据包。系统截取这些包以后会按照要求以列表的形式显示包的摘要信息，以面板的形式显示包的具体信息。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l5 level1 lfo2; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">2.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">数据包过滤</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">我了得到满足我们要求的包，我们可以对截取到的包进行过滤，根据不用的要求我们可以定义</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">2</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">中不同的过滤器：协议过滤器和</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">IP</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">地址过滤器。这两种过滤器是同时工作的，只有同时满足这</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">2</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">种要求的包才会被保留下来，其它的不满足要求的包都被丢弃掉。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l5 level1 lfo2; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">3.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">数据包统计</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">为了方便用户了解自己截取到的包的分布情况，我们提供了数据包统计的功能，按照不同的协议层次统计其百分比以及包的数量。用图的形式显示出来。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l5 level1 lfo2; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">4.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">协议分析</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">根据包的类型，我们会针对不同的情况对包的数据进行分析和显示。</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">支持了比较多的的协议类型，从数据链路层到应用层几乎都支持。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">对应用层以下的协议，都进行了详细的分析，取出了数据包中的每一个字段。至于应用层，暂时只识别了</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">112</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个协议，但是由于应用层协议实在繁多而且每个协议都相当复杂，所以我们没有进行深入的分析。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l5 level1 lfo2; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">5.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">智能排序</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">为了方便用户快速找到指定的包，我们提供了智能排序的功能，在用户停止截取数据包的时候，只需要点击一下列表的其中一个字段，系统就会自动对列表中的数据进行升序排序，再次点击排序方式切换。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l5 level1 lfo2; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">6.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">检测网卡信息</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">系统能够自动检测到系统中的网卡数目</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">(</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">包括虚拟的网卡</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，动态地显示在菜单列表中。同时能够检测网卡的相关信息。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l5 level1 lfo2; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">7.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">作为截包的守护进程</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">经过测试，</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">可以在计算机运行几天而不会死机，因此我们可以用它作为专门的截包程序，像守护进程一样一直运行</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">(</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">当然这有一定的限制，当截包实在太多的时候，比如好几个</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">G</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">的时候就有些困难了，因为在这个版本中，我们没有对</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">Buffer</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">文件进行分块，这或许会在以后的版本中加入这个功能</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l5 level1 lfo2; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">8.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">状态动态显示</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">为了在截取包的时候不影响用户的其它工作，我们可以把</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">最小化，然后它会自动地在任务栏上消失，只显示一个小的托盘图标，在它工作的时候，它的图标会动态地闪烁，停止的时候会停止不动。另外，我们还制作了一个小的浮动窗口显示系统状态，默认的时候放置于窗口顶部，</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l5 level1 lfo2; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">9.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">数据包的保存和载入</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">用户可以把截取的包保存到一个指定的文件</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">(</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">扩展名为</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">*.<SPAN class=SpellE>sni</SPAN>)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，在需要的时候再通过</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">载入，这种方式查看数据包和截取包的时候没有什么区别的，同时还可以动态地决定查看那一页</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">(</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">系统已经有分页的功能，并且是动态分页，我们可以自己定义每页的记录个数</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l5 level1 lfo2; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">10.<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">存储用户选项</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">系统选项的内容保存在</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">config/config.ini</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">中，这是一个</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">in</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">文件，一旦用户设置</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">(</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">比如界面，语言等</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">改变，该改变就会记录在文件中，系统下一次运行的时候就会自动根据这些设置做响应的工作。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<H1 style="MARGIN-LEFT: 0cm; TEXT-INDENT: 0cm"><A name=_Toc120219648><![if !supportLists]><SPAN lang=EN-US 
+style="mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">V.<SPAN style="FONT: 7pt 'Times New Roman'"> 
+</SPAN></SPAN></SPAN><![endif]></A><SPAN class=SpellE><SPAN 
+style="mso-bookmark: _Toc120219648"><SPAN 
+lang=EN-US>SnifferFox</SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Toc120219648"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">特点</SPAN></SPAN></H1>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l0 level1 lfo4; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">1.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">简单实用</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">简单是我们追求的目标，尽管系统的设计和实现比较复杂，但是我们更希望用户看到的是一个简单的系统而且是一个实用的系统。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l0 level1 lfo4; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">2.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">界面美观</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">的界面没有什么可说的，系统中包含了</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">5</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">套标准的界面</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">(<SPAN 
+class=SpellE>Winxp,MacOS,Protein,DeepBlue,BlueGrass</SPAN>)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，在不用重新启动系统的情况下可以及时地更换系统界面，而且是整体更换</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">(</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">当然这需要感谢我们的第</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">3</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">方控件</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l0 level1 lfo4; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">3.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">多语言支持</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">在设计系统的时候我们就考虑到了这个问题，所以</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">本身就是支持多语言的，我们很容易对它进行扩展，只需要把</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">Lang/<SPAN 
+class=SpellE>english</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">翻译成响应的语言就可以，不需要进行任何的程序更改。系统中已经提供了中英两中语言的支持，可以很容易的切换。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l0 level1 lfo4; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">4.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">有比较好的扩展性</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">我们在语言，界面，协议方面都充分考虑到了其可扩展性。所以，要在这个版本的基础上开发新的版本相对来说还是不难的。这样可以很好的复用现在的代码。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l0 level1 lfo4; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">5.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">操作方便</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">这是我们考虑得比较多的一个问题，我们在尽量地让系统的操作方式符合人们的习惯，使得用户觉得它方便好用。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l0 level1 lfo4; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">6.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">支持了比较多的协议</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">以太网中，</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">分析了</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">TCP/IP</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">族的几乎应用层以下的所有协议，应用层的协议能够识别</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">112</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<H1 style="MARGIN-LEFT: 0cm; TEXT-INDENT: 0cm"><A name=_Toc120219649><![if !supportLists]><SPAN lang=EN-US 
+style="mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">VI.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">扩展</SPAN></A><SPAN 
+class=SpellE><SPAN style="mso-bookmark: _Toc120219649"><SPAN 
+lang=EN-US>SnifferFox</SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Toc120219649"></SPAN></H1>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">扩展</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">是一件不容易的工作，除非你对它的结构非常了解，当然只是靠现在你读这个文档的话那是很难做到的。我们可以分</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">3</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个方面扩展它：</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l2 level1 lfo5; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">1.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">协议扩展</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">用是用面向对象的方法来分析设计和实现的，因此要扩展它，需要写相应的协议分析的</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">Class</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">来解决，然后在主程序中把它们连接起来即可。具体需要详细了解现在的系统结构才可以做到。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l2 level1 lfo5; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">2.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">界面扩展</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">通过更改第</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">3</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">方控件</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US style="FONT-SIZE: 12pt">SUIPack</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">来实现</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">(3com</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">目录</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，具体参见</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US style="FONT-SIZE: 12pt">SUIPack</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">的相关文档。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 39pt; TEXT-INDENT: -18pt; mso-list: l2 level1 lfo5; tab-stops: list 39.0pt"><![if !supportLists]><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">3.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">语言扩展</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">这是</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">中扩展功能最简单的部分，直接翻译</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">Lang/<SPAN 
+class=SpellE>english</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">文件就可以了。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<H1 style="MARGIN-LEFT: 0cm; TEXT-INDENT: 0cm"><A name=_Toc120219650><![if !supportLists]><SPAN lang=EN-US 
+style="mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">VII.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">作者</SPAN></A></H1>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN class=SpellE><B 
+style="mso-bidi-font-weight: normal"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">FoxBackBone</SPAN></B></SPAN><B 
+style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="FONT-SIZE: 12pt"> 
+Team</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">：</SPAN></B><SPAN 
+class=SpellE><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">zhengsh</SPAN></B></SPAN><B 
+style="mso-bidi-font-weight: normal"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，</SPAN></B><SPAN 
+class=SpellE><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">gourf</SPAN></B></SPAN><B 
+style="mso-bidi-font-weight: normal"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></B></P>
+<P class=MsoNormal style="MARGIN-LEFT: 21pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><!--[if gte vml 1]><v:shape id=_x0000_i1029 
+style="WIDTH: 309pt; HEIGHT: 253.5pt" type = "#_x0000_t75" coordsize = 
+"21600,21600"><v:imagedata o:title="" src = 
+"Note.files/image008.png"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=412 height=338
+src="Note.files/image013.jpg" v:shapes="_x0000_i1029"><![endif]><o:p></o:p></SPAN></P>
+<H1 style="MARGIN-LEFT: 0cm; TEXT-INDENT: 0cm"><A name=_Toc120219651><![if !supportLists]><SPAN lang=EN-US 
+style="mso-fareast-font-family: 'Times New Roman'"><SPAN 
+style="mso-list: Ignore">VIII.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><![endif]><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">结束语</SPAN></A></H1>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">尽管</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">只是一个小的软件，但是我们通过这个文档也只能够了解它的很小一部分，所以如果你要详细的了解它，只是通过这个文档是绝对不够的。进一步的阅读就只有源代码了，因为我们也没有太多的时间来详细地写出系统的设计。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21pt; LINE-HEIGHT: 150%"><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">如果你在使用了</SPAN><SPAN 
+class=SpellE><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%">SnifferFox</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">以后有关于它的建议或者想法，无论赞扬的还是批评的或者其它方面的，欢迎反馈给到我们的邮箱：</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><A 
+href="mailto:shaohui_1983@163.com">shaohui_1983@163.com</A></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，</SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"> <SPAN lang=EN-US><A 
+href="mailto:gouruifeng_529@sohu.com">gouruifeng_529@sohu.com</A></SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，感谢你的支持。</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt; LINE-HEIGHT: 150%"><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P></DIV></BODY></HTML>
